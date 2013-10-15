@@ -1,0 +1,29 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sizes</th>
+      <th>Bike type</th>
+      <!-- <th></th>
+      <th></th>
+      <th></th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @closeouts.each do |closeout| %>
+      <tr>
+        <td><%= closeout.name %></td>
+        <td><%= closeout.sizes %></td>
+        <td><%= closeout.bike_type %></td>
+        <!-- <td><%= link_to 'Show', closeout %></td>
+        <td><%= link_to 'Edit', edit_closeout_path(closeout) %></td>
+        <td><%= link_to 'Destroy', closeout, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Closeout', new_closeout_path %>

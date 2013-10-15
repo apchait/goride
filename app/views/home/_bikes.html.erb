@@ -1,0 +1,103 @@
+<!-- Team Member Profiles -->
+<div class="container" id='bikes'>
+      <div class="row">
+
+
+      	<% brands =
+      		{ :Cannondale =>
+      			{
+      				:image => 'http://www.austintricyclist.com/dir/2764/images/site/cannondale_logo_gn.jpg',
+      				:url => '',
+      				:name => 'Cannondale',
+      				:decription => 'Best Bikes'
+      			},
+            :Specialized =>
+            {
+              :image => 'http://www.austintricyclist.com/dir/2764/images/site/cannondale_logo_gn.jpg',
+              :url => '',
+              :name => 'Specialized',
+              :decription => 'Ok Bikes'
+            }
+      		}
+      	%>
+        <div class="col-lg-12">
+          <h2 class="page-header">Bikes</h2>
+        </div>
+
+      	<% brands.each do |name, brand| %>
+
+      	<div class="col-sm-4">
+        	<a href= "<%= brand[:url] %>"><%= image_tag brand[:image], :width => '150', :class => "img-responsive" %></a>
+            <h3><%= brand[:name] %> <small>Subtitle</small></h3>
+            <p><%= brand[:description] %></p>
+            <ul class="list-unstyled list-inline list-social-icons">
+              <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+              <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+              <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+              <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+            </ul>
+        </div>
+        <% end %>
+
+        <div class="col-sm-4">
+        	<img class="img-responsive" src="http://placehold.it/750x450">
+            <h3>John Smith <small>Job Title</small></h3>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+              <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+              <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+              <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+              <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+        	<img class="img-responsive" src="http://placehold.it/750x450">
+            <h3>John Smith <small>Job Title</small></h3>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+              <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+              <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+              <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+              <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+        	<img class="img-responsive" src="http://placehold.it/750x450">
+            <h3>John Smith <small>Job Title</small></h3>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+              <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+              <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+              <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+              <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+        	<img class="img-responsive" src="http://placehold.it/750x450">
+            <h3>John Smith <small>Job Title</small></h3>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+              <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+              <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+              <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+              <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-4">
+        	<img class="img-responsive" src="http://placehold.it/750x450">
+            <h3>John Smith <small>Job Title</small></h3>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+              <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+              <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+              <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+              <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+            </ul>
+        </div>
+
+      </div>
+  </div> <!-- container -->

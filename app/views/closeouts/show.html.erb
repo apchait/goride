@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @closeout.name %>
+</p>
+
+<p>
+  <strong>Sizes:</strong>
+  <%= @closeout.sizes %>
+</p>
+
+<p>
+  <strong>Bike type:</strong>
+  <%= @closeout.bike_type %>
+</p>
+
+<%= link_to 'Edit', edit_closeout_path(@closeout) %> |
+<%= link_to 'Back', closeouts_path %>

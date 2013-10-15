@@ -1,0 +1,29 @@
+<%= form_for(@closeout) do |f| %>
+  <% if @closeout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@closeout.errors.count, "error") %> prohibited this closeout from being saved:</h2>
+
+      <ul>
+      <% @closeout.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sizes %><br>
+    <%= f.text_field :sizes %>
+  </div>
+  <div class="field">
+    <%= f.label :bike_type %><br>
+    <%= f.text_field :bike_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
