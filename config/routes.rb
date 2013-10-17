@@ -1,4 +1,5 @@
 Goride::Application.routes.draw do
+  get "closeouts/:id/html" => 'closeouts#html'
   resources :closeouts
 
   get "home/index"

@@ -11,12 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131015035920) do
+ActiveRecord::Schema.define(version: 20131015184117) do
+
+  create_table "brands", force: true do |t|
+    t.string   "name"
+    t.string   "image"
+    t.string   "url"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "closeouts", force: true do |t|
-    t.string   "name"
+    t.string   "year"
+    t.string   "model"
+    t.string   "sale_price"
+    t.string   "original_price"
     t.string   "sizes"
+    t.string   "url"
     t.string   "bike_type"
+    t.string   "gender"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

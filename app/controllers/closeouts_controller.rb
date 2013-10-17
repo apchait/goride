@@ -1,6 +1,10 @@
 class CloseoutsController < ApplicationController
   before_action :set_closeout, only: [:show, :edit, :update, :destroy]
 
+  def html
+    set_closeout
+  end
+  
   # GET /closeouts
   # GET /closeouts.json
   def index

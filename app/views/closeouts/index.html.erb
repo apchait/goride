@@ -1,16 +1,19 @@
+<div class="container">
+  <div class='row'>
 <table class="table table-hover">
-  <thead>
+<!--   <thead>
     <tr>
       <th>Name</th>
       <th>Sizes</th>
       <th>Bike type</th>
-      <!-- <th></th>
-      <th></th>
-      <th></th> -->
+
     </tr>
-  </thead>
+  </thead> -->
 
   <tbody>
+   <tr id='mtbmens'>
+      <th>MTB Men's</th>
+    </tr>
     <% @closeouts.each do |closeout| %>
       <tr>
         <td><%= closeout.name %></td>
@@ -21,9 +24,35 @@
         <td><%= link_to 'Destroy', closeout, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
+    <tr id='roadmens'>
+      <th>Road Men's</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id='mtbwomens'>
+      <th>MTB Women's</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id='roadwomens'>
+      <th>Road Women's</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id='cyclocross'>
+      <th>Cyclocross</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 
 <br>
 
 <%= link_to 'New Closeout', new_closeout_path %>
+</div><!-- row -->
+</div><!-- container -->
