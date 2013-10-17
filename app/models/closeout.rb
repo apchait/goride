@@ -1,4 +1,5 @@
 class Closeout < ActiveRecord::Base
+	mount_uploader :image, ImageUploader
 
 	def spaced_year
 		year = ""
