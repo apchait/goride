@@ -73,6 +73,6 @@ class CloseoutsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def closeout_params
-      params.require(:closeout).permit(:name, :sizes, :bike_type)
+      params.require(:closeout).permit(:name, :sizes, :bike_type, :image)
     end
 end
