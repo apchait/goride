@@ -1,4 +1,6 @@
 Goride::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get "closeouts/:id/html" => 'closeouts#html'
   resources :closeouts
 
