@@ -14,7 +14,7 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
 # Active Admin Dashboard
-gem 'active-admin'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
