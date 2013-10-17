@@ -6,15 +6,15 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# Active Admin Dashboard
+gem 'activeadmin', :github => 'gregbell/active_admin'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
 # Bring in bootstrap 3
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
-
-# Active Admin Dashboard
-gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
