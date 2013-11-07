@@ -1,87 +1,248 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Goride</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag    "modern-business" %>
-  <%= javascript_include_tag "modern-business" %>
+    <title>GoRide Bicycles</title>
 
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "stylish-portfolio" %>
+    <!-- <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+  </head>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <body>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="http://startbootstrap.com">GoRide Bicycles</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#bikes">Bikes</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+  
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+        <h1>GoRide Bicycles</h1>
+        <h3>Highest Quality <em>Bikes </em>  at the Most Competitive<em> Prices</em></h3>
+        <a href="#about" class="btn btn-default btn-lg">Find Out More</a>
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+    <div id="about" class="intro">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-          <a class="navbar-brand" href="index.html"><%= image_tag 'logo-sm.png', :height => "25px"%></a>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>GoRide Bicycles continues the 30-year tradition of Garner’s Pro Bikes.
+We currently have one location in Redwood City. Stop by and pay us a visit!</h2>
+<p class="lead">GoRide Bicycles has a low-price guarantee on all products for up to seven days after purchase. We offer full service on ALL bicycles, and free lifetime service on any bicycles bought at the shop. We also offer corporate and club discounts. For information on how to get discounts for your organization, please contact <a title="mailto:bob@goridebicycles.com?subject=email subject" href="mailto:bob@goridebicycles.com?subject=GoRide Bicycles">Bob Weger</a>.</p>
+            <!-- <h2>Subtle Sidebar is the Perfect Template for your Next Portfolio Website Project!</h2>
+            <p class="lead">This template really has it all. It's up to you to customize it to your liking! It features some fresh photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p> -->
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- /Intro -->
+  
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Our Services</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-gears"></i>
+              <h4>Bike Repair</h4>
+              <p>Does your bike need some love? We can get you up and running in no time!</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-group"></i>
+              <h4>Corporate/Club</h4>
+              <p>We love working with corporate groups and clubs. Get in touch with us now for more info.</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-shopping-cart"></i>
+              <h4>Closeouts</h4>
+              <p>Get last year's models at the best prices! GoRide has an awesome selection of closouts bikes in all brands and styles</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-arrows-v"></i>
+              <h4>Bike Fitting</h4>
+              <p>Feel the difference of a professional fit by one of our crew. Every new bike comes with a free fitting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Services -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#bikes">Bikes</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Closouts <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="closeouts#mtbmens">MTB Men's</a></li>
-                <li><a href="closeouts#roadmens">Road Men's</a></li>
-                <li><a href="closeouts#mtbwomens">MTB Women's</a></li>
-                <li><a href="closeouts#roadwomens">Road Women's</a></li>
-                <li><a href="closeouts#cyclocross">Cyclocross</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="blog-home-1.html">Blog Home 1</a></li>
-                <li><a href="blog-home-2.html">Blog Home 2</a></li>
-                <li><a href="blog-post.html">Blog Post</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="full-width.html">Full Width Page</a></li>
-                <li><a href="sidebar.html">Sidebar Page</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="404.html">404</a></li>
-                <li><a href="pricing.html">Pricing Table</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-  </nav>
+    <!-- Callout -->
+    <div class="callout">
+      <div class="vert-text">
+        <h1>Our Bikes</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
 
-<%= yield %>
+    <!-- Portfolio -->
+    <div id="bikes" class="portfolio">
+      <div class="container">
+        <!-- <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Our Work</h2>
+            <hr>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="portfolio-item">
+              <a href="http://www.cannondale.com" target="_blank"><%= image_tag "cannondale.jpeg", :class => "img-portfolio img-responsive" %></a>
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="portfolio-item">
+              <a href="http://www.fujibikes.com" target="_blank"><%= image_tag "fuji.jpeg", :class => "img-portfolio img-responsive" %></a>
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="portfolio-item">
+              <a href="http://www.santacruzmtb.com/home" target="_blank"><%= image_tag "santa_cruz.jpeg", :class => "img-portfolio img-responsive" %></a>
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="portfolio-item">
+              <a href="http://www.lookcycle.com" target="_blank"><%= image_tag "look.jpeg", :class => "img-portfolio img-responsive" %></a>
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio -->
 
-	<div class="container">
+    <!-- Call to Action -->
+    <div class="call-to-action" id="hours">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <!-- <h3>The buttons below are impossible to resist.</h3> -->
+            <a href="#location" class="btn btn-lg btn-default">
+            2755 El Camino Real<br/>
+            Redwood City, CA 94061<br/>
+            (extra parking available behind the store)<br/>
+          </a>
+          <a href="#location" class="btn btn-lg btn-default">
+          650-366-BIKE (650-366-2453)
+        </a>
+          <a href="#location" class="btn btn-lg btn-default">
+          Mon-Sat: 10am-6pm
+          Sun: 12pm-5pm
+        </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
 
-		<hr>
+    <!-- Map -->
+    <div id="location" class="map">
+      <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small></iframe> -->
 
-		<footer>
-  		<div class="row">
-    		<div class="col-lg-12">
-      		<p>Copyright &copy; Company 2013</p>
-    		</div>
-  		</div>
-		</footer>
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=GoRide+Bicycles,+El+Camino+Real,+Redwood+City,+CA&amp;aq=0&amp;oq=twitter&amp;sll=37.471265,-122.214374&amp;sspn=0.006295,0.006295&amp;ie=UTF8&amp;hq=GoRide+Bicycles,+El+Camino+Real,+Redwood+City,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small></small></iframe>
+    </div>
+    <!-- /Map -->
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline">
+              <li><i class="fa fa-facebook fa-3x"></i></li>
+              <li><i class="fa fa-twitter fa-3x"></i></li>
+              <li><i class="fa fa-dribbble fa-3x"></i></li>
+            </ul>
+            <div class="top-scroll">
+              <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; GoRide Bicycles 2013</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
 
-	</div><!-- /.container -->
-</body>
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+  </body>
+
 </html>

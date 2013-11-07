@@ -18,11 +18,12 @@ class CloseoutsController < ApplicationController
 
   # GET /closeouts/new
   def new
-    @closeout = Closeout.new
+    @closeout = Closeout.new(closeout_params)
   end
 
   # GET /closeouts/1/edit
   def edit
+    set_closeout
   end
 
   # POST /closeouts
@@ -73,6 +74,6 @@ class CloseoutsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def closeout_params
-      params.require(:closeout).permit(:name, :sizes, :bike_type, :image)
+      params.require(:closeout).permit(:year, :model, :sale_price, :original_price, :sizes, :url, :bike_type, :gender, :created_at, :updated_at, :brand, :image, :frame_material)
     end
 end
