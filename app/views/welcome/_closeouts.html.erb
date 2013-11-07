@@ -1,0 +1,45 @@
+<div class="container">
+  <div class='row'>
+  	<div class="vert-text text-center">
+  		<h1>Closeouts</h1>
+  	</div>
+  	<hr>
+<table class="table">
+	<thead>
+      <th style="background: none;"></th>
+      <th style="background: none;">Sale</th>
+      <th style="background: none;">Was</th>
+      <th style="background: none;">Sizes</th>
+      <th style="background: none;"></th>
+  	</thead> 
+  	<tbody>
+  		<% styles = ["MTB Men's", "Road Men's", "MTB Women's", "Road Women's", "Cyclocross"] %>
+		<% styles.each do |style| %>
+			<% bike_type = style.split(" ")[0] %>
+			<% gender = style.split(" ")[1] %>
+			<tr id="<%= style.gsub(" ", "").downcase.gsub("'","")%>">
+				<th><%= style %></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<% @closeouts = Closeout.where("bike_type = ? AND gender = ?", bike_type, gender) %>
+			<% @closeouts.each do |closeout| %>
+		  	<tr>
+			    <td><%= closeout.full_name %></td>
+			    <td><b><%= closeout.sale_price %></b></td>
+			    <td><%= closeout.original_price %></td>
+			    <td><%= closeout.sizes %></td>
+			    <td><%= link_to "Info", "/closeouts/#{closeout.id}/html", :target => "blank", :style => {:color => "white" }%></td>
+			    <!-- show if logged in -->
+			    <!-- <td><%= link_to 'Show', closeout %></td>
+			    <td><%= link_to 'Edit', edit_closeout_path(closeout) %></td>
+			    <td><%= link_to 'Destroy', closeout, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+		  	</tr>
+			<% end %>
+		<% end %>
+	</tbody>
+</table>
+</div><!-- row -->
+</div><!-- container -->

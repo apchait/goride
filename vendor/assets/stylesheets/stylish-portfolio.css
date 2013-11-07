@@ -13,10 +13,25 @@ body {
 }
 
 .vert-text h1 {
+    text-shadow: -1px 0 aliceblue, 0 1px aliceblue, 1px 0 aliceblue, 0 -1px aliceblue;
+}
+
+td, th {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.8em;
+}
+.vert-text h1 {
+  text-shadow: -1px 0 aliceblue, 0 1px aliceblue, 1px 0 aliceblue, 0 -1px aliceblue;
+  color: #b84d45;
   padding: 0;
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
+}
+
+.vert-text h3 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: aliceblue;
 }
 
 /* Side Menu */
@@ -111,7 +126,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(/assets/bg.jpg) no-repeat center center fixed; 
+  background: url(/assets/shop.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

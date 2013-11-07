@@ -1,6 +1,7 @@
 class CloseoutsController < ApplicationController
   before_action :set_closeout, only: [:show, :edit, :update, :destroy]
-
+  layout "none"
+  
   def html
     set_closeout
   end
